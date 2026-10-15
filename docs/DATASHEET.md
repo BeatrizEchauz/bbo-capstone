@@ -48,9 +48,9 @@ Queries depend on previous results. Repeated local searches and boundary-heavy p
 
 ## Distribution and maintenance
 
-This repository package contains the data files and derived CSVs listed above. It is prepared for publication in Beatriz Echauz's GitHub account; public availability must be confirmed after upload. The original course PDFs and credentials are not included. See TERMS.md: no independent redistribution or open-data licence was supplied with the course data.
+I have made my dataset and derived CSV files available in my project repository: [BBO Capstone](https://github.com/BeatrizEchauz/bbo-capstone). I store the initial observations in `initial_data/`, cumulative feedback in `week_1/` to `week_9/`, and consolidated records in `results/`. I have not included the original course PDFs or any credentials. As explained in [Terms and attribution](TERMS.md), no independent redistribution or open-data licence was supplied with the course data.
 
-Beatriz maintains the dataset. On receiving feedback, preserve the raw files, validate eight aligned pairs, add the new round, regenerate summaries and update document versions. Corrections should be recorded in Git history rather than silently replacing prior results. Round-10 proposals remain unevaluated until actual portal feedback arrives.
+I am responsible for maintaining the dataset. When I receive new feedback, I will preserve the raw files, validate the eight input–output pairs, add the new round, regenerate the summaries and update the documentation. I will record corrections in Git history so that previous results remain traceable. I keep round-10 proposals separate from evaluated observations until their actual portal feedback becomes available.
 
 ## Framework reference
 
