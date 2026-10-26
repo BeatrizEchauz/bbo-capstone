@@ -1,5 +1,14 @@
 # Changelog
 
+## Final evaluation - 26 October 2026
+
+- Added CP_22-CP_25 and feedback through round 13; latest supplied historical notebooks retained.
+- Added final analysis exports for 279 observations, with seven functions improved overall.
+- Completed final-template datasheet, model card and approximately 100-word README summary.
+- Replaced machine-specific notebook environment paths and documented reproducibility limits.
+- Added the historical Module 23 presentation and independent final-data checks.
+- Preserved earlier results as explicitly labelled historical snapshots.
+
 ## Documentation version 1.1 — 15 October 2026
 
 - Added technical foundations with verified academic and official software references.

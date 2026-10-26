@@ -1,26 +1,27 @@
-# Reproducibility and provenance
+# Reproducibility and execution
 
-## Sources and packaging changes
+## Final evaluation
 
-Latest supplied notebooks were mapped to CP_12–CP_21 in order. Source filenames: CP_12(4), CP_13(5), CP_14(4), CP_15(3), CP_16(1), CP_17, CP_18(1), CP_19(3), CP_20(2), CP_21 (all .ipynb).
+Run from the repository root with `initial_data/` and all `week_n/` folders present. Install `requirements.txt`, select that environment as the notebook kernel and execute CP_25 top to bottom. Its final evaluation needs no portal access or new GP fitting. The terminal environment and notebook kernel are separate choices.
 
-Notebook code and stored outputs are retained except that CP_20/CP_21 setup now uses the working directory and current interpreter instead of author-specific Windows paths. This no longer verifies selection of the author's particular virtual environment. Each notebook has an explanatory archive note. Model choices, seeds and query-selection logic were not changed. Stored outputs were not regenerated during packaging; local historical paths may still appear in those outputs.
+The repository edition replaces the author's absolute Windows project paths in CP_20-CP_25 with `Path.cwd()` and uses the selected Python interpreter. This does not change the query-selection mathematics. The original uploads are the source for historical cell contents. Environment-cell outputs were cleared to avoid presenting machine-specific checks as current. Historical model outputs remain as records of the original runs.
 
-The initial .npy files were extracted unchanged from initial_data.rar. Nine-round cumulative feedback was parsed safely into literal lists. Earlier week folders were reconstructed using only the first n rounds. Derived CSVs were computed from those sources, not copied from rounded screenshots. Round-10 query strings were transcribed from the validated final selection.
+CP_25 code cells were executed sequentially in a clean Python namespace in the packaging environment and regenerated the final CSVs and figures. This checks final analysis, not a rerun of all historical model fits. A separate Jupyter-kernel execution could not be completed in the packaging environment because socket creation was restricted; the successful validation used sequential execution of the code cells instead. `environment-validation.txt` records the actual package versions used for this check. It is not a reconstruction of the author's historical Windows environment.
 
-## Execution and verification
+## Historical rounds
 
-Run from the repository root. Install requirements, select the notebook kernel, then run each notebook from its first cell. Earlier notebooks are exploratory archives and may need environment-specific adjustments. Their stored outputs remain useful evidence but are not proof of cross-platform execution.
+CP_12 uses only initial observations. CP_13-CP_24 use their matching prior cumulative snapshot (week 1 through week 12). Never concatenate weekly cumulative snapshots. Earlier snapshots are reconstructed prefixes; they preserve order without adding future observations.
 
-Run `python scripts/validate_data.py` to check counts, finite numeric arrays, dimensions, feedback consistency, summary metrics and round-10 coordinate format. This is a data/package check, not full model re-execution. Existing historical predictions have finite displayed precision.
+The final thirteen-round files were supplied as cumulative feedback. Their first nine prefixes were compared exactly with the repository's existing weekly files before adding weeks 10-13. The final source files retain their supplied bytes.
 
-For exact future reruns, record Python and package versions (`python -m pip freeze`), operating system, seed, notebook commit, data snapshot, CV split definitions and candidate-generation settings. Requirements here are dependency names, not a reproduction lockfile. Optimiser and floating-point changes can alter close UCB rankings.
+Early notebooks include exploratory fitting and verbose warnings. Rerunning may take longer than CP_25. Different NumPy, SciPy or scikit-learn versions can affect fitted kernels and candidate ranking. Saved outputs are historical evidence, not proof of identical new results. Seeds and configurations are in the notebook cells. Dependencies are not pinned for every historical round, and exact candidate reproduction across environments is not guaranteed.
 
-## Maintenance checklist
+## Independent verification
 
-1. Preserve new portal inputs and outputs before processing.
-2. Verify round count, alignment and dimensions; compare with actual submitted queries.
-3. Compare prior predictions against new observations before fitting updated models.
-4. Recompute performance tables and record warnings/configuration changes.
-5. Update datasheet/card version and add a Git commit describing the change.
-6. Keep pending proposals separate from evaluated observations.
+Run `python scripts/validate_data.py`. It checks initial shapes, finite values, bounds, all thirteen cumulative prefixes, final export rows and per-function best values. It also verifies the eight round-13 submitted points against recorded CP_24 predictions and checks exported historical prediction errors. This does not submit queries, infer leaderboard scores or validate hidden function formulas.
+
+## Export conventions
+
+`results/final_evaluation/` is authoritative for the completed project. `observations.csv` uses round 0 for initial data and JSON lists for coordinates. Raw observation values are preserved; the CSV uses 17 significant digits. `best_observed_points.csv` contains display-rounded coordinate strings. Historical prediction values are rounded to the precision saved in CP_24 and are not full-precision posterior parameters.
+
+Existing files directly under `results/` belong to the CP_21 snapshot and remain for provenance. `presentations/` contains the Module 23 presentation, explicitly labelled historical. Neither should be mistaken for the final 13-round evaluation.

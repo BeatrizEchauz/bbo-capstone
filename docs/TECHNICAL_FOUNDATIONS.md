@@ -1,3 +1,5 @@
+> Historical technical reference notes from the Module 21 snapshot. For the final implementation and results, see [MODEL_CARD.md](MODEL_CARD.md) and [STRATEGY_EVOLUTION.md](STRATEGY_EVOLUTION.md).
+
 # Technical foundations and design decisions
 
 **Documentation version:** 1.1 · **Updated:** 15 October 2026

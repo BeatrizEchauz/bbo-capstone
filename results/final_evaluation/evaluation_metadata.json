@@ -1,0 +1,20 @@
+{
+  "notebook": "CP_25.ipynb",
+  "stage": "Final evaluation; no further queries",
+  "completed_feedback_rounds": 13,
+  "initial_observations": 175,
+  "feedback_observations": 104,
+  "total_observations": 279,
+  "prediction_source": "Rounded historical predictions recorded in CP_24",
+  "models_refitted_for_prediction_comparison": false,
+  "notes": [
+    "Round 0 identifies supplied initial observations.",
+    "Predictions are stored separately from observed outputs.",
+    "Blank auxiliary predictions mean no auxiliary model was used.",
+    "Blank round-0 feedback fields are not missing function evaluations.",
+    "Best-point coordinate strings are rounded to six decimals.",
+    "Observation coordinates are preserved as numerical JSON lists.",
+    "Raw improvements are not comparable across functions.",
+    "These exports do not contain an aggregate leaderboard score."
+  ]
+}

@@ -1,39 +1,13 @@
-# Uploading this project to GitHub
+# Upload the final project
 
-## If you have not created the repository
+1. Download and unzip the final package to a new folder. Keep your existing local project as a backup.
+2. Open the unpacked repository folder. Its top level contains README.md, CP_12.ipynb through CP_25.ipynb, docs/, data folders and results/.
+3. On GitHub, open BeatrizEchauz/bbo-capstone at its root. Choose Add file > Upload files.
+4. Drag the CONTENTS of the unpacked folder, not the enclosing folder and not the ZIP. Existing paths will be updated; new paths will be added. If the browser limits the batch size, upload folders in separate batches.
+5. Inspect the listed paths. They should include README.md and docs/DATASHEET.md, not bbo-capstone-final/README.md.
+6. Use commit message: Finalise capstone results and documentation
+7. Confirm the commit. Check the README links, CP_25 output, datasheet, model card and presentation.
+8. Confirm the repository is public and accessible in a signed-out/private browser window.
+9. Post https://github.com/BeatrizEchauz/bbo-capstone on the Module 25.3 discussion board and comment on a peer's post.
 
-1. Extract `bbo-capstone.zip` on your computer.
-2. Sign in to GitHub and open https://github.com/new.
-3. Select owner `BeatrizEchauz` and repository name `bbo-capstone`.
-4. Use this description: `Black-box optimisation capstone: notebooks, query history, dataset datasheet and model card.`
-5. Select **Public**, as required by the activity.
-6. Leave automatic README and .gitignore creation disabled: these files are included. Do not select a new licence unless you have decided on appropriate terms.
-7. Click **Create repository**.
-8. On the empty repository page, choose **uploading an existing file**.
-9. Open the extracted `bbo-capstone` folder. Drag its contents, including folders, into the upload area. Upload the contents, not the ZIP or the enclosing folder. `README.md` must be at the repository root.
-10. Enter the commit message `Add capstone notebooks, data and transparency documentation`, then click **Commit changes**.
-
-## If the previous package is already uploaded
-
-1. Extract the updated ZIP into a new local folder to avoid mixing versions.
-2. Open your repository and choose **Add file → Upload files**.
-3. Drag the updated package contents into the upload area, preserving the same paths. Uploading matching paths updates those files; it does not remove unrelated files.
-4. Use the commit message `Add technical foundations, activity alignment and upload guide` and commit the changes.
-5. Confirm there is no extra nested `bbo-capstone` directory at the repository root.
-
-## Check before submitting the activity
-
-- Confirm the repository is **Public**.
-- Open the README and follow the links to DATASHEET.md, MODEL_CARD.md and TECHNICAL_FOUNDATIONS.md.
-- Confirm CP_12.ipynb through CP_21.ipynb, the data folders and results are visible.
-- Check that the documents still state nine evaluated rounds and a prepared tenth round.
-- Open the repository URL in a signed-out/private browser window to confirm public access.
-- Submit `https://github.com/BeatrizEchauz/bbo-capstone` on the discussion board only after the repository exists and the files are accessible.
-- Complete the separate peer-feedback requirement.
-
-This upload does not submit numerical queries to the capstone portal. Query submission is a separate activity.
-
-## Official help
-
-- [Create a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
-- [Upload files](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
+Do not upload a Python virtual environment, credentials or course lesson PDFs. The existing .gitignore can remain unchanged. Do not delete the existing repository or its history.
